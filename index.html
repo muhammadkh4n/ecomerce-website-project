@@ -1,101 +1,178 @@
-<main>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/ie.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <div class="main-navigation">
+  <div class="index">
+
+    <header id="header">
+      <section class="control-bar">
         <div class="container">
-            <section class="categories">
-                <ul class="category-list">
-                    <li>
-                        <a href="#">Phones</a>
-                        <?php //include_once("drop-menu.php"); ?>
-                    </li>
-                    <li>
-                        <a href="#">Phone Accessories</a>
-                    </li>
-                    <li>
-                        <a href="#">Chargers & Docks</a>
-                    </li>
-                    <li>
-                        <a href="#">Computers</a>
-                    </li>
-                    <li>
-                        <a href="#">Laptops</a>
-                    </li>
-                    <li>
-                        <a href="#">Tablets</a>
-                    </li>
-                </ul>
-            </section>
+            <ul class="left-menu left">
+                <li>
+                    Hello.
+                    <a href="#">Sign In</a> or
+                    <a href="#">Sign Up</a>
+                </li>
+            </ul>
+
+            <ul class="right-menu right">
+                <li>
+                    <a href="#">
+                        <span id="cart"></span>
+                        <span id="badge">0</span>
+                    </a>
+                </li>
+                <li><a href="#">Account Panel</a></li>
+            </ul>
         </div>
-    </div>
+      </section>
 
-    <div class="container">
-        <section class="featured">
-            <div class="slider">
-                <a href="#" class="slide-change prev" id="prev"><span></span></a>
-                <a href="#" class="slide-change next" id="next"><span></span></a>
-                <ul class="slides">
-                    <li class="slide"><a href="#slide1"><img src="img/slide1.jpg" alt="Slide 1"/></a></li>
-                    <li class="slide"><a href="#slide2"><img src="img/slide2.jpg" alt="Slide 2"/></a></li>
-                    <li class="slide"><a href="#slide3"><img src="img/slide3.jpg" alt="Slide 3"/></a></li>
-                    <li class="slide"><a href="#slide4"><img src="img/slide4.jpg" alt="Slide 4"/></a></li>
-                    <li class="slide"><a href="#slide5"><img src="img/slide5.jpg" alt="Slide 5"/></a></li>
-                    <li class="slide"><a href="#slide6"><img src="img/slide6.jpg" alt="Slide 6"/></a></li>
-                    <li class="slide"><a href="#slide1"><img src="img/slide1.jpg" alt="Slide 1"/></a></li>
-                </ul>
-                <ul class="slider-nav">
-                    <li class="current"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+      <div class="clearfix"></div>
+
+      <section class="search">
+          <div class="container">
+              <div class="search-inner">
+                  <form action="search.html">
+                      <ul>
+                          <li class="brand">
+                              <div>
+                                  <a href="index.html"><img src="img/shopper.png" alt="Shopper Logo"/></a>
+                              </div>
+                          </li>
+                          <li class="search-box">
+                              <div>
+                                  <input type="text" placeholder="Search..."/>
+                              </div>
+                          </li>
+                          <li class="option-box">
+                              <div>
+                                  <select name="category" id="category">
+                                      <option value="1" selected>All Categories</option>
+                                      <option value="2">Phones</option>
+                                      <option value="3">Tablets</option>
+                                      <option value="4">Computers</option>
+                                      <option value="5">Laptops</option>
+                                  </select>
+                              </div>
+                          </li>
+                          <li class="submit-box">
+                              <div>
+                                  <input type="submit" value="Search" class="btn"/>
+                              </div>
+                          </li>
+                      </ul>
+                  </form>
+              </div>
+          </div>
         </section>
-        <section class="featured-items">
-            <div class="items">
-                <ul>
-                    <li class="item">
-                        <a href="#">
-                            <img src="img/gs6e.jpg" alt="Samsung Galaxy S6 Edge"/>
-                            <span class="img-label">
-                                <p>
-                                    Samsung Galaxy S6 Edge<br>
-                                    <i>$699.0</i>
-                                </p>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <img src="img/ambp.jpg" alt="Apple Macbook Pro"/>
-                            <span class="img-label">
-                                <p>
-                                    Apple Macbook Pro<br>
-                                    <i>$1299.0</i>
-                                </p>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <img src="img/alien.jpg" alt="Dell Alienware" class="big"/>
-                            <span class="img-label">
-                                <p>
-                                    Dell Alienware<br>
-                                    <i>$2799.0</i>
-                                </p>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
+    </header>
 
-    <div class="clearfix"></div>
+    <main>
 
-    <div class="container">
+      <div class="main-navigation">
+          <div class="container">
+              <section class="categories">
+                  <ul class="category-list">
+                      <li>
+                          <a href="#">Phones</a>
+                          <?php //include_once("drop-menu.php"); ?>
+                      </li>
+                      <li>
+                          <a href="#">Phone Accessories</a>
+                      </li>
+                      <li>
+                          <a href="#">Chargers &amp; Docks</a>
+                      </li>
+                      <li>
+                          <a href="#">Computers</a>
+                      </li>
+                      <li>
+                          <a href="#">Laptops</a>
+                      </li>
+                      <li>
+                          <a href="#">Tablets</a>
+                      </li>
+                  </ul>
+              </section>
+          </div>
+      </div>
+
+      <div class="container">
+          <section class="featured">
+              <div class="slider">
+                  <a href="#" class="slide-change prev" id="prev"><span></span></a>
+                  <a href="#" class="slide-change next" id="next"><span></span></a>
+                  <ul class="slides">
+                      <li class="slide"><a href="#slide1"><img src="img/slide1.jpg" alt="Slide 1"/></a></li>
+                      <li class="slide"><a href="#slide2"><img src="img/slide2.jpg" alt="Slide 2"/></a></li>
+                      <li class="slide"><a href="#slide3"><img src="img/slide3.jpg" alt="Slide 3"/></a></li>
+                      <li class="slide"><a href="#slide4"><img src="img/slide4.jpg" alt="Slide 4"/></a></li>
+                      <li class="slide"><a href="#slide5"><img src="img/slide5.jpg" alt="Slide 5"/></a></li>
+                      <li class="slide"><a href="#slide6"><img src="img/slide6.jpg" alt="Slide 6"/></a></li>
+                      <li class="slide"><a href="#slide1"><img src="img/slide1.jpg" alt="Slide 1"/></a></li>
+                  </ul>
+                  <ul class="slider-nav">
+                      <li class="current"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                  </ul>
+              </div>
+          </section>
+          <section class="featured-items">
+              <div class="items">
+                  <ul>
+                      <li class="item">
+                          <a href="#">
+                              <img src="img/gs6e.jpg" alt="Samsung Galaxy S6 Edge"/>
+                              <span class="img-label">
+                                  <p>
+                                      Samsung Galaxy S6 Edge<br>
+                                      <i>$699.0</i>
+                                  </p>
+                              </span>
+                          </a>
+                      </li>
+                      <li class="item">
+                          <a href="#">
+                              <img src="img/ambp.jpg" alt="Apple Macbook Pro"/>
+                              <span class="img-label">
+                                  <p>
+                                      Apple Macbook Pro<br>
+                                      <i>$1299.0</i>
+                                  </p>
+                              </span>
+                          </a>
+                      </li>
+                      <li class="item">
+                          <a href="#">
+                              <img src="img/alien.jpg" alt="Dell Alienware" class="big"/>
+                              <span class="img-label">
+                                  <p>
+                                      Dell Alienware<br>
+                                      <i>$2799.0</i>
+                                  </p>
+                              </span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="container">
         <section class="today-deals product-section">
             <header>
                 <h1>Today's Deals</h1>
@@ -337,8 +414,117 @@
                 </div>
             </div>
         </section>
-    </div>
+      </div>
 
-</main>
+    </main>
 
-<div class="clearfix"></div>
+    <div class="clearfix"></div>
+
+    <section class="imp-links">
+      <div class="container">
+        <div class="subscribe left">
+          <h1>Subscribe</h1>
+          <form action="">
+            <input type="text" name="sub-mail" placeholder="Please enter your email">
+            <input id="sub-button" type="submit" value="Subscribe">
+          </form>
+          <p>Register now to get updates on promotions and coupons.</p>
+          <div class="social">
+            <h2>Stay Connected</h2>
+            <ul>
+              <li><a href="#" title="Facebook">Facebook</a></li>
+              <li><a href="#" title="Twitter">Twitter</a></li>
+              <li><a href="#" title="LinkedIn">Linked In</a></li>
+              <li><a href="#" title="Pinterest">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="links left">
+          <div class="link-section">
+            <h1>How to Buy</h1>
+            <ul>
+              <li><a href="#">Create an Account</a></li>
+              <li><a href="#">Making Payments</a></li>
+              <li><a href="#">Delivery Options</a></li>
+              <li><a href="#">Buyer Protection</a></li>
+            </ul>
+          </div>
+          <div class="link-section">
+            <h1>Customer Service</h1>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Frequently Asked Questions</a></li>
+              <li><a href="#">Transaction Service Agreement</a></li>
+              <li><a href="#">Take Our Survey</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="link-section">
+            <h1>Partnership Program</h1>
+            <ul>
+              <li><a href="#">Partnerships</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <ul>
+          <li><a href="#" title="Paypal">Paypal</a></li>
+          <li><a href="#" title="Visa">Visa</a></li>
+          <li><a href="#" title="Mastercard">Mastercard</a></li>
+          <li><a href="#" title="American Express">American Express</a></li>
+          <li><a href="#" title="Skrill">Skrill</a></li>
+          <li><a href="#" title="Bank Transfer">Bank Transfer</a></li>
+        </ul>
+      </div>
+    </section>
+
+        <section class="info-links">
+            <div class="container">
+                <div class="info left">
+                    <h1>Information Links</h1>
+                    <a href="">About Shopping,</a> <a href="">Site Map,</a> <a href="">Online Shopping,</a> <a href="">Buy,</a>
+                    <a href="">My Orders,</a> <a href="">Help Center,</a> <a href="">Customer Support,</a>
+                    <a href="">Shopping Seller Center,</a> <a href="">Mobile Site.</a>
+                </div>
+                <div class="apps left">
+                    <h1>Mobile Apps</h1>
+                    <ul>
+                        <li class="app"><a href="#">Google Play</a></li>
+                        <li class="app"><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="copy">
+                    <a href="#">brand.com</a>
+                    <p> &copy; 2015 eShopper.com. All rights reserved</p>
+                </div>
+                <div class="foot-btn">
+                    <a href="#">Top</a>
+                </div>
+            </div>
+
+            <div class="back-to-top">
+                <span title="Back to Top">
+                    To Top
+                </span>
+            </div>
+        </footer>
+
+  </div>
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/MainSlider.js" type="text/javascript"></script>
+  <script src="js/SectionSlider.js" type="text/javascript"></script>
+  <script src="js/tabs.js" type="text/javascript"></script>
+  <script src="js/items.js" type="text/javascript"></script>
+  <script src="js/ProductGallery.js" type="text/javascript"></script>
+</body>
+</html>
